@@ -1,0 +1,57 @@
+{
+  "nodes": {
+    "flake-compat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1606424373,
+        "narHash": "sha256-oq8d4//CJOrVj+EcOaSXvMebvuTkmBJuT5tzlfewUnQ=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "99f1c2157fba4bfe6211a321fd0ee43199025dbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1608136118,
+        "narHash": "sha256-yvnnBQrVsrWkRAEZDM3LiAVPSKBgk9ZgiSaa6NYmJX4=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "929768261a3ede470eafb58d5b819e1a848aa8bf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "release-20.03",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-compat": "flake-compat",
+        "nixpkgs": "nixpkgs",
+        "src": "src"
+      }
+    },
+    "src": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-kDACA93GAMsu2Tn4GxIH1uqpNb5qgz8Dek1qKPXWUx0=",
+        "type": "tarball",
+        "url": "https://github.com/pgbackrest/pgbackrest/archive/release/2.22.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://github.com/pgbackrest/pgbackrest/archive/release/2.22.tar.gz"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
