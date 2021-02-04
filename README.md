@@ -16,6 +16,7 @@ Usage:
   imports = [
     (import (fetchTarball {
       url = "https://github.com/TawasalMessenger/pgbackuprestore-flake/archive/2.22.tar.gz";
+      sha256 = "138mg34ari5qb9awksh0na0m21b17hgcrgdn7wnwnkngcvhmbkis";
     })).nixosModule
   ];
 
