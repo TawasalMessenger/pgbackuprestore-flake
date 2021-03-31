@@ -18,16 +18,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1612123974,
-        "narHash": "sha256-s4ST6x+dWDn4jbG9bzrDf+4Fx9YmNAScH+oteyYToPc=",
+        "lastModified": 1616779317,
+        "narHash": "sha256-+mUTkYguFMNGb57JkwauDgjcq65RnOLUhDo4mhb8qAI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "4544234bb9a7b09e63a472b6c892eb19b38c9b10",
+        "rev": "ad47284f8b01f587e24a4f14e0f93126d8ebecda",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "release-20.09",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -42,13 +42,13 @@
     "src": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-kDACA93GAMsu2Tn4GxIH1uqpNb5qgz8Dek1qKPXWUx0=",
+        "narHash": "sha256-+zn9s1/9dPAfFEhDTODNRzRSLZ1jJfx4KTMPvGkOa74=",
         "type": "tarball",
-        "url": "https://github.com/pgbackrest/pgbackrest/archive/release/2.22.tar.gz"
+        "url": "https://codeload.github.com/pgbackrest/pgbackrest/tar.gz/release/2.32"
       },
       "original": {
         "type": "tarball",
-        "url": "https://github.com/pgbackrest/pgbackrest/archive/release/2.22.tar.gz"
+        "url": "https://github.com/pgbackrest/pgbackrest/archive/release/2.32.tar.gz"
       }
     }
   },
