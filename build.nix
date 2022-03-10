@@ -6,8 +6,8 @@ let
     inherit src;
 
     phases = [ "unpackPhase" "configurePhase" "buildPhase" "installPhase" "fixupPhase" ];
-    nativeBuildInputs = [ makeWrapper pkg-config openssl libxml2 bzip2 ];
-    buildInputs = [ perl perlPackages.DBDPg postgresql ];
+    nativeBuildInputs = [ makeWrapper pkg-config ];
+    buildInputs = [ perl perlPackages.DBDPg postgresql openssl libxml2 bzip2 libyaml ];
 
     preConfigure = ''
       cd src
@@ -21,7 +21,7 @@ let
 
     fixupPhase = ''
       wrapProgram $out/bin/pgbackrest \
-        --prefix PATH : ${stdenv.lib.makeBinPath [ perl perlPackages.DBDPg ]} \
+        --prefix PATH : ${lib.makeBinPath [ perl perlPackages.DBDPg ]} \
         --set PERL5LIB "$out/${perlPackages.perl.libPrefix}:${with perlPackages; makePerlPath [ DBDPg DBI ]}"
     '';
     #passthru.bin = pgbr + "/bin/pgbackrest";

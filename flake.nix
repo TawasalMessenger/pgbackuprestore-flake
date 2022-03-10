@@ -2,13 +2,13 @@
   description = "Postgres backup/restore";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-21.11";
     flake-compat = {
       url = "github:edolstra/flake-compat";
       flake = false;
     };
     src = {
-      url = "https://github.com/pgbackrest/pgbackrest/archive/release/2.32.tar.gz";
+      url = "github:pgbackrest/pgbackrest/release/2.38";
       flake = false;
     };
   };
